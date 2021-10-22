@@ -1,9 +1,9 @@
-nechet_in_kub = []
+odd_in_kub = []
 sum_of_kub = 0
 for i in range(1000):
     if i % 2:
-        nechet_in_kub .append(i**3)
-for element_from_kub in nechet_in_kub:
+        odd_in_kub .append(i**3)
+for element_from_kub in odd_in_kub:
     number = element_from_kub
     sum_digit = 0
     while number > 0:
@@ -15,7 +15,7 @@ for element_from_kub in nechet_in_kub:
 print('Cумма чисел из  списка, сумма цифр которых делится нацело на 7:', sum_of_kub)
 
 sum_of_kub = 0
-for element_from_kub in nechet_in_kub:
+for element_from_kub in odd_in_kub:
     number = element_from_kub + 17
     sum_digit = 0
     while number > 0:
