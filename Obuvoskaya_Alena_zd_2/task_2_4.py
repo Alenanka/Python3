@@ -12,7 +12,7 @@ for i in price:
     if isinstance(i, int):
         price_with_format.append('{0:02d} руб 00 коп'.format(i))
     else:
-        if len(str(i).split('.')[1]) > 1:
+        if int(str(i).split('.')[1][0]) == 0:
             price_with_format.append('{0:02d} руб {1:02d} коп'.format(int(i), int(str(i).split('.')[1])))
         else:
             price_with_format.append('{0:02d} руб {1:2d} коп'.format(int(i), (int(str(i).split('.')[1]))*10))
